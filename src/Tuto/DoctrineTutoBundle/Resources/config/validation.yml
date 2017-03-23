@@ -1,0 +1,7 @@
+Tuto\DoctrineTutoBundle\Entity\Person:
+    constraints:
+        - Tuto\DoctrineTutoBundle\Validator\Constraints\UniquePair: ~
+    properties:
+        email:
+            - Email:
+                message: The email "{{ value }}" is not a valid email.

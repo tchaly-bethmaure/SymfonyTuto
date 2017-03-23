@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>People list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Age</th>
+                <th>Eyecolor</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for person in people %}
+            <tr>
+                <td><a href="{{ path('tuto_doctrine_person_show', { 'id': person.id }) }}">{{ person.id }}</a></td>
+                <td>{{ person.name }}</td>
+                <td>{{ person.gender }}</td>
+                <td>{{ person.age }}</td>
+                <td>{{ person.eyeColor }}</td>
+                <td>{{ person.email }}</td>
+                <td>{{ person.phone }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('tuto_doctrine_person_show', { 'id': person.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('tuto_doctrine_person_edit', { 'id': person.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('tuto_doctrine_person_new') }}">Create a new person</a>
+        </li>
+    </ul>
+{% endblock %}

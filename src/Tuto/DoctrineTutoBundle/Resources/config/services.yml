@@ -1,0 +1,10 @@
+services:
+    tuto_doctrine.unique_pair_validator:
+        class: Tuto\DoctrineTutoBundle\Validator\Constraints\UniquePairValidator
+        tags:
+            - { name: validator.constraint_validator }
+        arguments:
+            entityManager: "@doctrine.orm.entity_manager"
+#    tuto_doctrine_tuto.example:
+#        class: Tuto\DoctrineTutoBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

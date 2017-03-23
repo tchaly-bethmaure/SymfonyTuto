@@ -1,0 +1,7 @@
+app:
+    resource: "@AppBundle/Resources/config/routing.yml"
+    prefix:   /
+
+tuto_doctrine_tuto:
+    resource: "@TutoDoctrineTutoBundle/Resources/config/routing.yml"
+    prefix:   /tuto/doctrine

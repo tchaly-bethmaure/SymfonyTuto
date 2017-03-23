@@ -1,0 +1,36 @@
+Tuto\DoctrineTutoBundle\Entity\Person:
+    type: entity
+    table: null
+    repositoryClass: Tuto\DoctrineTutoBundle\Repository\PersonRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        gender:
+            type: string
+            length: 255
+        age:
+            type: integer
+        eyeColor:
+            type: string
+            length: 255
+        email:
+            type: string
+            length: 255
+        phone:
+            type: string
+            length: 255
+    manyToOne:
+        company:
+            targetEntity: Company
+            inversedBy: persons
+            joinColumn:
+                name: company_id
+                referencedColumnName: id
+    lifecycleCallbacks: {  }
