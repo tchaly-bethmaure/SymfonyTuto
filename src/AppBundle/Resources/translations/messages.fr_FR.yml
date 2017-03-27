@@ -1,0 +1,5 @@
+app:
+    home: 'Page d''acceuil'
+    tuto:
+        doctrine: 'Tutoriel doctrine'
+        event: 'Tutoriel event dispatch'

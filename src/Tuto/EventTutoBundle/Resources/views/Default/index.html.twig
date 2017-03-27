@@ -1,0 +1,7 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}TutoEventTutoBundle:Default:index{% endblock %}
+
+{% block body %}
+	{% if app.environment == 'dev' %}{{ dump(event) }}{% endif %}
+{% endblock %}

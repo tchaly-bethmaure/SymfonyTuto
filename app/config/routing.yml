@@ -5,3 +5,7 @@ app:
 tuto_doctrine_tuto:
     resource: "@TutoDoctrineTutoBundle/Resources/config/routing.yml"
     prefix:   /tuto/doctrine
+
+tuto_event_tuto:
+    resource: "@TutoEventTutoBundle/Resources/config/routing.yml"
+    prefix:   /tuto/event

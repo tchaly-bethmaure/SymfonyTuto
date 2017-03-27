@@ -1,0 +1,3 @@
+tuto_event_dispatch:
+    path:     /
+    defaults: { _controller: TutoEventTutoBundle:Default:index }

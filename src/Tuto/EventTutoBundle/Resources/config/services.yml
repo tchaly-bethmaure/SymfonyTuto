@@ -1,0 +1,19 @@
+services:
+    tuto.event.exception_subscriber:
+        class: Tuto\EventTutoBundle\EventSubscriber\ExceptionSubscriber
+        arguments:
+            - "%kernel.environment%"
+        tags:
+            - { name: kernel.event_subscriber }
+    tuto.event.exception_listener:
+        class: Tuto\EventTutoBundle\EventListener\ExceptionListener
+        arguments:
+            - "%kernel.environment%"
+        tags:
+            - { name: kernel.event_listener, event: kernel.exception }
+    tuto.event.tuto_listener:
+        class: Tuto\EventTutoBundle\EventListener\TutoListener
+        arguments:
+            - "%kernel.environment%"
+        tags:
+            - { name: kernel.event_listener, event: tuto.event }
