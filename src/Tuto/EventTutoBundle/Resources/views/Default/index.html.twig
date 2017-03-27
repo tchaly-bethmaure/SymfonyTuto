@@ -3,5 +3,9 @@
 {% block title %}TutoEventTutoBundle:Default:index{% endblock %}
 
 {% block body %}
+
+    <h1>{{ 'tuto.event.title'|trans }}</h1>
+    <p>{{ 'tuto.event.convent'|trans }}</p>
+
 	{% if app.environment == 'dev' %}{{ dump(event) }}{% endif %}
 {% endblock %}

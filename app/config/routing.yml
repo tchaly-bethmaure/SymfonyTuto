@@ -9,3 +9,7 @@ tuto_doctrine_tuto:
 tuto_event_tuto:
     resource: "@TutoEventTutoBundle/Resources/config/routing.yml"
     prefix:   /tuto/event
+
+tuto_config_tuto:
+    resource: "@TutoConfigTutoBundle/Resources/config/routing.yml"
+    prefix:   /tuto/config

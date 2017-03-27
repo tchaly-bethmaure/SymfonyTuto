@@ -3,3 +3,4 @@ app:
     tuto:
         doctrine: 'Tutoriel doctrine'
         event: 'Tutoriel event dispatch'
+        config: 'Tutoriel config'

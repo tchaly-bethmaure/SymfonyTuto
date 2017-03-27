@@ -1,0 +1,4 @@
+services:
+#    tuto_config_tuto.example:
+#        class: Tuto\ConfigTutoBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

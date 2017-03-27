@@ -1,0 +1,3 @@
+tuto_config:
+    path: /
+    defaults: { _controller: TutoConfigTutoBundle:Default:index }

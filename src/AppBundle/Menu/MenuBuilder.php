@@ -40,6 +40,13 @@ class MenuBuilder
             'route' => 'tuto_event_dispatch'
         ]);
 
+        $menu->addChild('config', [
+            'label' => 'app.tuto.config',
+            'route' => 'tuto_config'
+        ]);
+
+        
+
         return $menu;
     }
 }
