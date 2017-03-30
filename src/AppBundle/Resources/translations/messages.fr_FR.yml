@@ -4,3 +4,4 @@ app:
         doctrine: 'Tutoriel doctrine'
         event: 'Tutoriel event dispatch'
         config: 'Tutoriel config'
+        model: 'Tutoriel model'

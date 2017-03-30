@@ -1,4 +1,4 @@
-tuto_doctrine_person:
+tuto_doctrine_toto:
     resource: "@TutoDoctrineTutoBundle/Resources/config/routing/person.yml"
     prefix:   /person
 

@@ -13,3 +13,7 @@ tuto_event_tuto:
 tuto_config_tuto:
     resource: "@TutoConfigTutoBundle/Resources/config/routing.yml"
     prefix:   /tuto/config
+
+tuto_model_tuto:
+    resource: "@TutoModelTutoBundle/Resources/config/routing.yml"
+    prefix:   /tuto/model

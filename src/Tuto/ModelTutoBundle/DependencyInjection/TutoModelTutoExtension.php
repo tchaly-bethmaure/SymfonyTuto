@@ -1,6 +1,6 @@
 <?php
 
-namespace Tuto\ConfigTutoBundle\DependencyInjection;
+namespace Tuto\ModelTutoBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * @link http://symfony.com/doc/current/cookbook/bundles/extension.html
  */
-class TutoConfigTutoExtension extends Extension
+class TutoModelTutoExtension extends Extension
 {
     /**
      * {@inheritdoc}
@@ -21,10 +21,6 @@ class TutoConfigTutoExtension extends Extension
     {
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
-
-        $container->setParameter('it2.login', $config['login']);
-        $container->setParameter('it2.password', $config['password']);
-        $container->setParameter('it2.port', $config['port']);
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');

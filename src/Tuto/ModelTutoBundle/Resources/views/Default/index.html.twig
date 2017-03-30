@@ -1,0 +1,26 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}TutoModelTutoBundle:Default:index{% endblock %}
+
+{% block body %}
+<h1>Welcome to the Default:index page</h1>
+
+<ul><li><a href="{{ path('tuto_model_tuto_preset') }}">with preset</a></li></ul>
+
+{{ form_start(form) }}
+	<div>
+		<div>{{ form_label(form.lattitude) }}</div>
+		<div>{{ form_widget(form.lattitude) }}</div>
+	</div>
+	<div>
+		<div>{{ form_label(form.longitude) }}</div>
+		<div>{{ form_widget(form.longitude) }}</div>
+	</div>
+	<div>
+		{{ form_widget(form.save, { 'attr' : { 'class' : 'btn' }}) }}
+	</div>
+{{ form_end(form) }}
+
+{{ dump(position) }}
+
+{% endblock %}

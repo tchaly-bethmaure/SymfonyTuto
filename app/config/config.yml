@@ -78,3 +78,8 @@ knp_menu:
     templating: false
     # the renderer to use, list is also available by default
     default_renderer: twig
+
+tuto_config_tuto:
+    login: 'toto'
+    password : 'test'
+    port: 8080

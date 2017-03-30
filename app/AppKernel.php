@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             new Tuto\DoctrineTutoBundle\TutoDoctrineTutoBundle(),
             new Tuto\EventTutoBundle\TutoEventTutoBundle(),
             new Tuto\ConfigTutoBundle\TutoConfigTutoBundle(),
+            new Tuto\ModelTutoBundle\TutoModelTutoBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

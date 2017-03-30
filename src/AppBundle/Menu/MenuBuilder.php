@@ -42,10 +42,13 @@ class MenuBuilder
 
         $menu->addChild('config', [
             'label' => 'app.tuto.config',
-            'route' => 'tuto_config'
+            'route' => 'tuto_config_tuto_index'
         ]);
 
-        
+        $menu->addChild('model', [
+            'label' => 'app.tuto.model',
+            'route' => 'tuto_model_tuto_index'
+        ]);
 
         return $menu;
     }

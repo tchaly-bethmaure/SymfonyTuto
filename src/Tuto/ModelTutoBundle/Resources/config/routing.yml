@@ -1,0 +1,7 @@
+tuto_model_tuto_index:
+    path:     /
+    defaults: { _controller: TutoModelTutoBundle:Default:index }
+
+tuto_model_tuto_preset:
+    path:     /preset
+    defaults: { _controller: TutoModelTutoBundle:Default:preset }

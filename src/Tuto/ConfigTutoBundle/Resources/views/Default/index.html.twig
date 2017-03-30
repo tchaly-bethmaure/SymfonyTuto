@@ -4,5 +4,9 @@
 
 {% block body %}
 <h1>{{ 'tuto.config.title'|trans }}</h1>
-<p>{{ 'tuto.config.convent'|trans }}</p>
+<p>{{ 'tuto.config.content'|trans }}</p>
+
+{{ dump(login) }}
+{{ dump(password) }}
+{{ dump(port) }}
 {% endblock %}
